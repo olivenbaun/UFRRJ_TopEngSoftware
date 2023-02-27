@@ -87,7 +87,7 @@ function deletarAluno(matricula){
 
 function atualizarAluno(aluno){
     const promise = new Promise((resolve, reject) => { 
-        modelAluno.updateAlunoBD(aluno).then(resultado => {
+        modeloAluno.updateAlunoBD(aluno).then(resultado => {
         if (resultado.affectedRows == 1){
             resolve(resultado);        
         }else{
